@@ -21,7 +21,11 @@ The script requires the following Python packages to be installed:
 
 The script requires a set of credentials to access the Google Sheets document and the Twitter API. These credentials could be placed separately or in the dictionaries in the script named `credentials` as well as variables named `api_key`, `api_secret`, `bearer_token`, `access_token`, and `access_token_secret`.
 
-The script also requires a list of RSS feed URLs to scan, which should be placed in a list named `feeds`. The script will also use a dictionary named `display_names` to better display the name of the website in the message sent to Twitter.
+To generate 3-legged OAuth tokens for your Twitter bot account, follow [this guide](https://medium.com/geekculture/how-to-create-multiple-bots-with-a-single-twitter-developer-account-529eaba6a576), but replace the last step with this curl command in your terminal:
+
+`curl --request POST --url 'https://twitter.com/oauth/access_token?oauth_token=<TOKEN>&oauth_verifier=<PIN>'``
+
+The script also requires a list of RSS feed URLs to scan, which should be placed in a list named `feeds`. The script will also use a dictionary named `display_names` to better display the name/handle of the website in the message sent to Twitter.
 
 ## Usage
 
