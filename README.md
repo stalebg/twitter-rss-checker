@@ -6,6 +6,12 @@ In addition to scanning for new tweets, the script also scans the same Google Sh
 
 The script requires a set of credentials to access the Google Sheets document and the Twitter API. These credentials should be placed in a dictionary in the script named credentials, and the API keys should be placed in included variables.
 
+Check out a Norwegian implementation:
+
+<a href="https://twitter.com/intent/follow?screen_name=sitertbot">
+        <img src="https://img.shields.io/twitter/follow/sitertbot?style=social&logo=twitter"
+            alt="follow on Twitter"></a>
+
 ## Requirements
 
 The script requires the following Python packages to be installed:
